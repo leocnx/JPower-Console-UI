@@ -1,0 +1,697 @@
+/*全局样式开始*/
+h1>small{
+    color:#c7c7c7;       
+}
+tr>th{
+    text-align: center;
+    vertical-align:middle !important;
+    white-space:nowrap;
+    border:none !important;
+    border-top:2px solid #e8e8e8 !important;
+}
+tr>td{
+    text-align: center;
+    vertical-align:middle !important;
+    white-space:nowrap;
+}
+a, a:hover {
+   text-decoration: none;
+   cursor: pointer;
+}
+.space{
+    max-height: 25px !important;
+    line-height:25px;
+}
+.col-xs-4,.col-xs-8{
+    padding:0;
+}
+.blank{
+    margin: 10px 0 !important;
+    padding:0px 4px !important;
+    max-height: 25px !important;
+    line-height:25px !important;
+}
+.borderNone{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.line-space{
+    border-bottom: 1px #c1c1c1 solid;
+    margin: 5px 0px;
+}
+.bottom-space{
+    border-top: 1px #c1c1c1 solid;
+    margin-bottom:50px;
+}
+.text-center{
+    text-align: center;
+}
+.row{
+    line-height: 45px;
+    margin: 0;
+}
+.pageBottom{
+    padding-bottom:60px;
+}
+.popup-button{
+    width: 90px;
+    height: 47px;
+    color: #FFF !important;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border:none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+}
+.search-button{
+    width: 130px;
+    height: 46px;
+    color: #FFF !important;
+    letter-spacing: 15px;
+    padding: 0 0 0 15px;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border:none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+    margin-bottom:10px;
+}
+.new-button{
+    width: 130px;
+    height: 46px;
+    color: #FFF !important;
+    letter-spacing: 15px;
+    padding: 0 0 0 15px;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border:none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+    margin:10px 0;
+}
+.head-button{
+    width: 130px;
+    height: 46px;
+    color: #963 !important;
+    letter-spacing: 15px;
+    padding: 0 0 0 15px;
+    text-align: center;
+    background-color: #fee188;
+    border-color: #fee188;
+    border-radius: 4px;
+    border:none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+    margin:10px 0;
+}
+.trEdit-button{
+    color: #428bca !important;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-weight: normal;
+    padding: 0 5px;
+}
+.table-striped{
+    margin-top: 10px;
+}
+.application-button{
+    width: 130px;
+    height: 46px;
+    color: #FFF !important;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border:none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+.showMore{
+    visibility:hidden;
+    display:none;
+}
+.more-button{
+    width: 30px;
+    height: 46px;
+    color: #FFF !important;
+    letter-spacing: 15px;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border:none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+    margin-bottom:10px;
+    outline: none;
+}
+.panel {
+    background-color: #fff;
+    border:none;
+    box-shadow:none
+}
+.panel-default>.panel-heading{
+    color: #FFF;
+    background: #10aeff;
+}
+
+.head-search-background{
+    color:#fff;
+    height:50px;
+    background: #10aeff;
+}
+.head-banner{
+    background-color: #14afff;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+.required-before{
+    color:#f00;
+    font-size:14px;
+    margin-top:3px;
+    margin-left:-15px;
+}
+.adjust-label{
+	width:20.5%;
+}
+
+/*全局样式结束*/
+
+/*管理中心界面css开始*/
+.console-navbar {
+    /*margin-top: -15px;*/
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    border-width: 0;
+    border-radius: 0;
+    height: 80px;
+    background: #14afff;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+.console-account{
+    float:right;
+    padding-top:35px;
+    margin-right:35px;
+}
+.console-accountName{   
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 30px;
+    font-size: 14px;
+    font-family:微软雅黑;
+}
+.console-accountExit{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 14px;
+    font-family:微软雅黑;
+}
+
+.console-phonePic{
+    float:right;
+    padding-top: 20px;
+}
+
+.console-phoneText{
+    font-family:微软雅黑;
+    font-size: 22px;
+    color: #fff;
+}
+.console-login{
+    text-align: center;
+    min-height: 50px;
+    margin-bottom: 0;
+    overflow: hidden;
+    position: relative;
+    border: 0 solid;
+    background:#fff;
+    padding: 10px;
+}
+.console-loginPic{
+    background: #fff;
+}
+.console-loginName{
+    color:#fff;
+    font-size: 20px;
+    font-family:微软雅黑;
+}
+.console-loginNameBottom{
+    height: 30px;
+    border-top: 1px solid #e8e8e8;
+    background: #f5f5f5;
+}   
+/*管理中心界面css结束*/
+
+/*对账上传文页面开始*/
+input[type="file" i]::-webkit-file-upload-button{
+    color: #fff;
+    height: 25px;
+    border: 1px solid #fff;
+    background-color: #10aeff;
+}
+.uploadFileInput{
+    background-color: #fff;
+    border: 1px solid #10aeff;
+    line-height: normal;
+    display: inline-block !important;
+    width: 112%;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 3px 5px 3px 5px;
+    margin-left: -12px;
+    min-width: 85px;
+}
+.uploadFileButton{
+    width: 50px;
+    height: 45px;
+    color: #fff;
+    text-align: center;
+    background-color: #10aeff !important;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.uploadFileInput-TopBlank{
+    margin-top:50px;
+}
+/*对账上传文页结束始*/
+.createStatementButton{
+    border: 1px solid #FFF;
+    -webkit-transition: all ease .15s;
+    transition: all ease .15s;
+    margin:0;
+    border-radius: 5px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background: #9889c1;
+    line-height: normal;
+}
+.popup-page-bottom{
+    margin-bottom: 45px;
+}
+.newAccount-title{
+    text-align:center;
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight:400;
+    font-family:微软雅黑;
+    color:#2aa5e6
+}
+.newAccount-input{
+    min-height: 25px;
+    max-height: 30px !important;
+    line-height:25px;
+    overflow: hidden;
+    margin: 7px 0;
+}
+.newAccount-line{
+    border-bottom: 1px #d5d5d5 solid;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.account-text{
+    font-size: 14px;
+    color: #858585;       
+    padding-left:5px;
+}
+/*操作员新增页面开始*/
+.selectGroups-form{
+    width: 1000px;
+    float: left;
+    margin-left: -200%;
+}
+/*操作员新增页面结束*/
+
+/*子账号管理页面开始*/
+.newRole-form{
+    border:1px solid #c8c8c8;
+    background-color: #f9f9f9;
+    line-height: 45px;
+    overflow-x: auto;
+    overflow-x: overlay;
+    white-space: nowrap;
+}
+.newRole-twoHeight{
+    line-height: 92px;
+}
+.newRole-thirdHeight{
+    line-height: 139px;
+}
+.newRole-footer{
+    height: 200px;
+
+}
+.newRole-botton{
+    margin: 30px 0 30px 0;
+    width: 160px;
+    height: 46px;
+    color: #fff;
+    border:none;
+    background-color:#10aeff;
+    font-family:微软雅黑;
+    font-size: 20px;
+    word-spacing:20px;
+}
+.newOper-botton{
+    margin: 30px 0 30px 0;
+    width: 160px;
+    height: 46px;
+    color: #fff;
+    border:none;
+    background-color:#10aeff;
+    font-family:微软雅黑;
+    font-size: 20px;
+    word-spacing:20px;
+}
+/*子账号管理页面结束*/
+
+/* 申请提现页面开始 */
+.withdrawal-botton{
+    margin: 30px 0 30px 0;
+    width: 160px;
+    height: 46px;
+    color: #fff;
+    border:none;
+    background-color:#10aeff;
+    font-family:微软雅黑;
+    font-size: 20px;
+    word-spacing:20px;
+}
+.withdrawal-info{
+    background-color: #f6faff;
+    height: 300px;
+    padding-top: 40px;
+}
+.withdrawal-check{
+    padding-top: 40px;
+}
+.withdrawal-blank{
+    line-height: 35px;
+}
+.withdrawal-font{
+    color:#323232;
+    font-size: 20px;
+    font-family:微软雅黑;
+    padding-right: 20px;
+}
+.withdrawalBank{
+    color:#000;
+    font-size: 26px;
+    font-family:黑体;
+}
+.withdrawalBA{
+    color:#000;
+    font-size: 26px;
+    font-family:黑体;
+}
+.withdrawalBAN{
+    color:#000;
+    font-size: 26px;
+    font-family:黑体;
+}
+.withdrawalAble{
+    color:#f00;
+    font-size: 26px;
+    font-family:黑体;
+}
+.withdrawalAmount{
+    width: 240px;
+    height: 40px;
+    border: 1px solid #f5f5f5 !important;
+    background-color: #fff !important;
+    font-size: 18px !important;
+    color: #000 !important;
+    word-spacing: 10px;
+    font-family:微软雅黑 !important;
+    padding-left: 20px !important;
+}
+.withdrawalPassword{
+    width: 240px;
+    height: 40px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+.withdrawalForget{
+    color: #10aeff;
+    margin-left:20px;
+    font-size: 16px;
+    font-family:微软雅黑;
+}
+.withdrawalPL{
+    color: #909090;
+    font-size: 16px;
+    font-family:微软雅黑;
+    padding-bottom: 15px;
+}
+.withdrawalCheck{
+    width: 240px;
+    height: 40px;
+    border: 1px solid #f5f5f5;
+    background-color: #fff;
+}
+/* 申请提现页面结束 */
+
+/*重置初始化密码开始*/
+.initPasswordHead{
+    color: #323232;
+    font-size: 24px;
+    font-family:微软雅黑;
+}
+.initPasswordHL{
+    border-top: 1px solid #2aa5e6;
+    margin-bottom: 50px;
+}
+.initPassword-font{
+    color:#323232;
+    font-size: 14px;
+    font-family:微软雅黑;
+    padding-right: 20px;
+}
+.initPassword{
+    width: 327px;
+    height: 46px;
+    border-radius: 5px !important;
+    border:1px solid #bcbcc4  !important;
+    margin-bottom: 15px;
+    padding-left: 10px !important;
+}
+/*初始化密码限制提示语*/
+.initPL{
+    margin-left:20px;
+}
+.initNessPIc{
+    color:#f00;
+    font-size: 20px;
+    padding: 10px;
+    position: relative;
+    top: 6px;
+}
+.initPassword-sure{
+    margin: 30px 0 30px 0;
+    width: 327px;
+    height: 46px;
+    color: #fff;
+    border:none;
+    background-color:#10aeff;
+    font-family:微软雅黑;
+    font-size: 20px;
+    word-spacing:20px;
+    border-radius: 5px;
+}
+/*重置初始化密码结束*/
+
+/*修改密码开始*/
+.changePasswordHead{
+    color: #323232;
+    font-size: 24px;
+    font-family:微软雅黑;
+}
+.changePasswordHL{
+    border-top: 1px solid #2aa5e6;
+    margin-bottom: 50px;
+}
+.changePassword-font{
+    color:#323232;
+    font-size: 14px;
+    font-family:微软雅黑;
+    padding-right: 20px;
+}
+.changePassword{
+    width: 327px;
+    height: 46px;
+    border-radius: 5px !important;
+    border:1px solid #bcbcc4  !important;
+    margin-bottom: 15px;
+    padding-left: 10px !important;
+}
+.changePassword-button{
+    margin: 30px 0 30px 0;
+    width: 150px;
+    height: 46px;
+    color: #fff;
+    border:none;
+    background-color:#10aeff;
+    font-family:微软雅黑;
+    font-size: 20px;
+    word-spacing:20px;
+    border-radius: 5px;
+    margin-right:13px;
+}
+
+/*修改密码结束*/
+
+/*平台管理商户中心页面开始*/
+.modal-header .close {
+    font-size: 32px;
+    margin-top: -15px;
+}
+.userModal-title{
+    font-size:18px;
+    font-family:微软雅黑;
+    font-weight:normal;
+    margin-bottom: 20px;
+}
+
+.userModal-botton{
+    width: 100px;
+    height: 46px;
+    color: #fff;
+    border: none;
+    background-color: #10aeff;
+    font-family:微软雅黑;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+.usrPopup{    
+    z-index:1050;
+    position:fixed;
+    margin:0 auto;
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+
+}
+/*平台管理商户中心页面结束*/
+
+/*费率管理页面开始*/
+.rateTitle{
+    text-align: center;
+    font-size: 26px;
+    font-weight: normal;
+    font-family:微软雅黑,黑体;
+    letter-spacing: 20px;
+}
+.rate-line-blank{
+    border-bottom: 1px #c1c1c1 solid;
+    margin: 25px 0px 50px 0px;
+}
+.rate-editbutton{
+    width: 70px;
+    color: #FFF !important;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+    margin: 10px 0;
+}
+/*费率管理页面结束*/
+/*行业业务类别管理开始*/
+.parameters-popup{ 
+    /*width: 600px;   */
+    outline: none;
+    z-index:1050;
+    position:fixed;
+    margin:0 auto;
+    position: fixed;
+    top: 50%;left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+.parameters-popup-input{    
+    width: 90%;
+    line-height: 1.42857143;
+}
+
+
+/*行业业务类别管理结束*/
+/*基本信息银行管理页面开始*/
+.newBank-upload{
+    width: 70px;
+    color: #FFF !important;
+    text-align: center;
+    background-color: #10aeff;
+    border-color: #10aeff;
+    border-radius: 4px;
+    border: none;
+    font-size: 16px;
+    font-family:微软雅黑;
+    font-weight: normal;
+}
+/*基本信息银行管理页面结束*/
+
+/*按钮切换CSS开始*/
+.tabTitle ul{
+	list-style-type: none;
+	margin: 0px;
+}
+.tabTitle li{
+	float: left;
+	margin-right: 60px;
+	height: 60px;
+    line-height: 60px;
+    width: 25%;
+    text-align: center;
+	cursor: pointer;
+	font-weight: bold;
+	color: #000000;
+	border: 1px solid #c9c9c9;
+	padding: 0px;
+}
+.tabTitle .select{
+	border: 1px solid #03aaff;
+}
+.tabTitle .normal{ 
+	background-color:#FFFFFF;
+}
+.radioIcon{
+	background:url(../img/payImg/select_0.png) 28px 28px;
+	width: 28px;
+	height: 28px;
+	pointer-events: none;
+    margin-top: 16px;
+    margin-left: 15px;
+    float: left;
+}
+
+.selecti{
+	background:url(../img/payImg/select_1.png) 28px 28px;
+}
+
+/*按钮切换CSS结束*/
