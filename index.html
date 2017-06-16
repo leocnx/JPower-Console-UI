@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>JPower Console UI</title>
+<link rel="stylesheet" href="styles/ace-admin/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="styles/ace-admin/assets/css/ace.min.css" />
+<link rel="stylesheet" href="styles/ace-admin/assets/css/ace-fonts.css" />
+<link rel="stylesheet" href="styles/ace-admin/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="styles/ace-admin/assets/css/console.css" />
+<link rel="stylesheet" href="scripts/3rd-party/datepicker/bootstrap-datepicker.min.css" />
+
+<script type="text/javascript" data-main="scripts/config.js" src="scripts/3rd-party/requireJS-2.1.22/require.js"></script>
+</head>
+<body class="no-skin">
+	<!-- /#navbar -->
+	<div id="navbar" class="navbar console-navbar">
+		<div class="navbar-container" id="navbar-container">
+			<div class="col-xs-2">
+				<!-- <a href="/JPower-Console-UI/#console">
+                    <img src="styles/ace-admin/assets/img/logo.png">
+                </a> -->
+			</div>
+			<div class="col-xs-10 text-right">
+				<div class="console-phonePic">
+					<!-- <img src="styles/ace-admin/assets/img/phone.png"/>
+                    <span class="console-phoneText">+86 18617103587</span> -->
+				</div>
+				<div class="console-account"></div>
+			</div>
+		</div>
+	</div>
+	<!-- /#navbar -->
+	
+	<!-- /.main-container -->
+	<div class="main-container" id="main-container" style="position: absolute; width: 100%; min-height: 100%">
+		<div id="sidebar" class="sidebar responsive">
+			<div id="menu">
+				<div style="text-align: center;">
+					<img src="styles/ace-admin/assets/img/loading.gif">
+				</div>
+			</div>
+			<div class="sidebar-toggle sidebar-collapse" id="sidebar-collapse" onclick="minmenu()">
+				<i id="fa-angle-double" class="ace-icon fa fa-angle-double-left"
+					data-icon1="ace-icon fa fa-angle-double-left"
+					data-icon2="ace-icon fa fa-angle-double-right"></i>
+			</div>
+		</div>
+		
+		<!-- /.main-content -->
+		<div class="main-content">
+			<div class="breadcrumbs" id="breadcrumbs">
+				<ul class="breadcrumb">
+					<li><i class="ace-icon fa fa-home home-icon"></i> <a href="#">Home</a>
+					</li>
+					<li class="active">JPower Console UI</li>
+				</ul>
+			</div>
+			<div class="page-content">
+				<div class="col-xs-12 row pageBottom" id="main"></div>
+			</div>
+		</div>
+		<!-- /.main-content -->
+		
+		<!-- /.footer -->
+		<div class="footer">
+			<div class="footer-inner">
+				<div class="footer-content">
+					<span class="bigger-120"> <span class="blue bolder"></span>
+						&copy; 2017 Pls Use chrome45+, firefox34+, IE11 or Edge
+					</span> &nbsp; &nbsp;
+				</div>
+			</div>
+		</div>
+		<!-- /.footer -->
+
+		<a href="#" id="btn-scroll-up"
+			class="btn-scroll-up btn btn-sm btn-inverse"> <i
+			class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+		</a>
+	</div>
+	<!-- /.main-container -->
+
+<script type="text/javascript">
+	function isDigit(num) {
+		var test_value = num.value;
+		var patrn = /^([1-9]\d*|0)(\.\d*[1-9])?$/;
+		if (!patrn.exec(test_value)) {
+			alert("Error number type input");
+			return false;
+		}
+	}
+
+	function show() {
+		var event = window.event || arguments.callee.caller.arguments[0];
+		var v = $(event.target).next().next().has("ul").length;
+		if (v == 0) {
+			if ($(event.target).find("b").attr("class") == "arrow fa fa-angle-up subArrow") {
+				$(event.target).find("b").attr("class",
+						"arrow fa fa-angle-down subArrow");
+				$(event.target).find(".subArrow").css("color", "#000");
+				$(event.target).find(".subtitle").css("color", "#000");
+			} else {
+				$(event.target).find("b").attr("class",
+						"arrow fa fa-angle-up subArrow");
+				$(event.target).find(".subArrow").css("color", "#03aaff");
+				$(event.target).find(".subtitle").css("color", "#03aaff");
+			}
+			$(".show:not(.submenu)").removeClass("show");
+			$(event.target).next().next().toggleClass("show");
+		} else if ($(event.target).next().next().hasClass("show")) {
+			$(event.target).next().next().toggleClass("show");
+			$(".title").css("color", "#000");
+			$(event.target).find("b").attr("class",
+					"arrow fa fa-angle-down");
+			$(event.target).find(".arrow").css("color", "#000");
+			$(".subtitle").css("color", "#000");
+		} else {
+			$(".subtitle").css("color", "#000");
+			$(".title").css("color", "#000");
+			$(".arrow").css("color", "#000");
+			$(".arrow").attr("class", "arrow fa fa-angle-down");
+			$(event.target).find("span").css("color", "#03aaff");
+			$(event.target).find(".arrow").css("color", "#03aaff");
+			$(event.target).find("b").attr("class", "arrow fa fa-angle-up");
+			$(".show").removeClass("show");
+			$(event.target).next().next().toggleClass("show");
+		}
+		event.stopPropagation();
+	}
+
+	function show2() {
+		var event = window.event || arguments.callee.caller.arguments[0];
+		var v = $(event.target).parent().next().next().has("ul").length;
+		if (v == 0) {
+			$(".show:not(.submenu)").removeClass("show");
+			$(event.target).parent().next().next().toggleClass("show");
+		} else if ($(event.target).parent().next().next().hasClass("show")) {
+			$(event.target).parent().next().next().toggleClass("show");
+			$(".title").css("color", "#000");
+			$(event.target).parent().find("b").attr("class",
+					"arrow fa fa-angle-down");
+			$(event.target).parent().find(".arrow").css("color", "#000");
+			$(".subtitle").css("color", "#000");
+		} else {
+			$(".subtitle").css("color", "#000");
+			$(".title").css("color", "#000");
+			$(".arrow").css("color", "#000");
+			$(".arrow").attr("class", "arrow fa fa-angle-down");
+			$(event.target).parent().find("span").css("color", "#03aaff");
+			$(event.target).parent().find(".arrow").css("color", "#03aaff");
+			$(event.target).parent().find("b").attr("class",
+					"arrow fa fa-angle-up");
+			$(".show").removeClass("show");
+			$(event.target).parent().next().next().toggleClass("show");
+		}
+		event.stopPropagation();
+	}
+
+	function minmenu() {
+		$("#sidebar").toggleClass("menu-min");
+		$("#fa-angle-double").toggleClass("fa-angle-double-left")
+				.toggleClass("fa-angle-double-right");
+		event.stopPropagation();
+	}
+</script>
+</body>
+</html>

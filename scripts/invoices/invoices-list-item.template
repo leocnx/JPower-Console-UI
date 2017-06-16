@@ -1,0 +1,105 @@
+<th><%- id%></th>
+<td><% if (typeof(creationDate) !== "undefined") {print(new Date(creationDate).Format("yyyy-MM-dd hh:mm"));}%></td>
+<td><% if (typeof(outTradeNo) !== "undefined") {%><%- outTradeNo %><%}%></td>
+<td><% if (typeof(buyer) !== "undefined") {%><%- buyer %><%}%></td>
+<td><% if (typeof(seller) !== "undefined") {%><%- seller %><%}%></td>
+<td><% if (typeof(description) !== "undefined") {%><%- description %><%}%></td>
+<td>&yen;<% if (typeof(totalPrice) !== "undefined") {%><%- new String().fmoney(totalPrice) %><%}%></td>
+<td><% if (typeof(paymentStatus) !== "undefined"){
+        if (paymentStatus == "PENDING"){
+            print("未支付");
+        }else if(paymentStatus == "PARTIAL_PAID"){
+            print("部分支付");
+        }else if(paymentStatus == "PAID"){
+            print("已完成支付");
+        }else {%><%- paymentStatus %><%}
+}%></td>
+<td><% if (typeof(paymentDateTime) !== "undefined") {print(new Date(paymentDateTime).Format("yyyy-MM-dd hh:mm"));}%></td>
+<td><% if (typeof(tradeType) !== "undefined"){
+         if (tradeType === "NOW"){
+            if (typeof(paymentDateTime) !== "undefined")print(new Date(paymentDateTime).Format("yyyy-MM-dd hh:mm"));
+        }else if (tradeType === "VOUCH"){
+            if (typeof(txnCompleteTime) !== "undefined")print(new Date(txnCompleteTime).Format("yyyy-MM-dd hh:mm"));
+        }
+}%></td>
+
+<td><% if (typeof(status) !== "undefined"){
+         if (status === "OUT_DATED"){
+             print("失效");
+        }else if (status === "REFUNDED"){
+            print("退款撤单");
+        }else if (status === "PENDING"){
+            print("待付款");
+        }else if (status === "SUCCESS"){
+            print("交易成功");
+        }else if (status === "CLOSE"){
+            print("交易结束不可再操作");
+        }else if (status === "FALSE"){
+            print("交易失败");
+        }else if(status === "TOBECONFIRM"){
+            print("已付款待确认");
+        }else {%><%- status %><%}
+}%></td>
+<td><%if (typeof(businessType) !== "undefined"){
+        if (businessType == "TRADE")
+                {print("交易");
+        }else if(businessType == "CHARGE")
+                {print("充值");
+        }else   {%><%- businessType %><%}
+}%></td>
+<td><% if (typeof(tradeType) !== "undefined"){
+        if (tradeType == "NOW"){
+            print("即时交易");
+        }else if(tradeType == "VOUCH")
+                {print("担保交易");
+        }else {%><%- tradeType %><%}
+}%></td>
+<td><% if (typeof(paymentType) !== "undefined"){
+        if (paymentType == "IN_FULL"){
+            print("全额支付");
+        }else if(paymentType == "FREE_INSTALMENTS"){
+            print("分步支付");
+        }else if(paymentType == "PREAUTHORIZATION"){
+            print("预授权支付");
+        }else if(paymentType == "BY_INSTALMENT_SCHEDULE"){
+            print("分期支付");
+        }else if(paymentType == "ON_CREDIT"){
+            print("白条支付");
+        }else {%><%- paymentType %><%}
+}%></td>
+<td><%if (typeof(validityTimeLimit) !== "undefined")print(new Date(validityTimeLimit).Format("yyyy-MM-dd hh:mm"));%></td>
+<td><%if (typeof(consumeTimeLimit) !== "undefined")print(new Date(consumeTimeLimit).Format("yyyy-MM-dd hh:mm"));%></td>
+<td>&yen;<% if (typeof(payedPrice) !== "undefined") { print(new String().fmoney(payedPrice)) }%></td>
+<td>&yen;<% if (typeof(refundedPrice) !== "undefined") { print(new String().fmoney(refundedPrice)) }%></td>
+<td>&yen;<% if (typeof(settlementAmount) !== "undefined") { print(new String().fmoney(settlementedAmount)) }%></td>
+<td><% if (typeof(refundStatus) !== "undefined"){
+        if (refundStatus === "NO_REFUND"){
+            print("无退款");
+        }else if (refundStatus === "REFUNDING"){
+            print("退款中");
+        }else if (refundStatus === "REFUNDED"){
+            print("退款结束");
+        }else {%><%- refundStatus %><%}
+}%></td>
+
+<td><% if (typeof(reconciliationStatus) !== "undefined"){
+        if (reconciliationStatus == "WAITING"){
+            print("未完成对账");
+        }else if(reconciliationStatus == "SUCCESS"){
+            print("已完成对账");
+        }else if(reconciliationStatus == "DONT_NEED"){
+            print("无需对账");
+        }else {%><%- reconciliationStatus %><%}
+}%></td>
+<td><% if (typeof(commissionAlreadyApplied) !== "undefined") {%><% if (commissionAlreadyApplied) {%>已完成分账<%} else{%>未分账<%} %><%}%></td>
+<td><% if (typeof(settlementStatus) !== "undefined"){
+        if (settlementStatus == "PENDING"){
+            print("未完成结算");
+        }else if(settlementStatus == "FINISHED"){
+            print("已完成结算");
+        }else if(settlementStatus == "REFUNDED"){
+            print("无需结算");
+        }else {%><%- settlementStatus %><%}
+}%></td>
+<td><% if (typeof(source) !== "undefined") {%><%- source.legalName %><%}%></td>
+<td>haha</td>

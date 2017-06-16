@@ -1,0 +1,30 @@
+<ul class="nav nav-list">
+	<li class="active">
+		<a><i class="menu-icon fa fa-tachometer"></i><span class="menu-text">Welcome</span></a>
+		<b class="arrow"></b>
+	</li>
+	
+	<li>
+		<a class="dropdown-toggle" onclick="show()"> 
+			<i class="menu-icon fa fa-user"></i> <span class="menu-text title" onclick="show2()">Menu1</span> 
+			<b onclick="show2()" class="arrow fa fa-angle-down"></b>
+		</a> 
+		<b class="arrow"></b>
+		<ul class="submenu">
+			<li><a class="dropdown-toggle" onclick="show()"><i
+					class="menu-icon fa fa-caret-right"></i><span class="subtitle"
+					style="pointer-events: none;">Menu1-1</span><b onclick="show2()"
+					class="arrow fa fa-angle-down subArrow"></b></a><b class="arrow"></b>
+				<ul class="submenu">
+					<li><a href="#invoices"><i
+							class="menu-icon fa fa-caret-right"></i>Menu1-1-1</a><b class="arrow"></b></li>
+					<li><a href="#registeredUsers"><i
+							class="menu-icon fa fa-caret-right"></i>Menu1-1-2</a><b class="arrow"></b></li>
+				</ul>
+			</li>
+
+			<ul class="submenu" style="dispaly: none">
+			</ul>
+		</ul>
+	</li>
+</ul>
